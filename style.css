@@ -49,7 +49,7 @@ body {
 .nav-links a:hover {
     color: #000;
 }
-.download-btn1 {
+.download-btn {
     padding: 8px 16px;
     background-color: #00E0B3;
     color: white;
@@ -59,7 +59,7 @@ body {
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
-.download-btn1:hover {
+.download-btn:hover {
     background-color: #00b18a;
 }
 
