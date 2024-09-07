@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navbar*/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0; /* Sticks the navbar to the top of the page */
+    left: 0; /* Ensures it spans the full width of the screen */
+    right: 0; /* Ensures it spans the full width of the screen */
+    z-index: 1000;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 50px;
+    margin-right: 8px;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li {
+    margin-right: 20px;
+}
+.nav-links li:last-child {
+    margin-right: 0;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: #000;
+}
+.download-btn {
+    padding: 8px 16px;
+    background-color: #00E0B3;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.download-btn:hover {
+    background-color: #00b18a;
+}
+
+
+/* header */
+
+#header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+    margin-bottom: 30px;
+}
+#header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+#header h1 span {
+    color: #04ddb2;
+}
+#header p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Video box */
+#video-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    background-color: lightgray;
+    height: 400px;
+    width: 550px;
+    margin: auto;
+    border-radius: 10px;
+}
+#video-box iframe {
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    max-width: 440px;
+    border-radius: 10px;
+   
+}
+#video-box:hover {
+    box-shadow: 0 12px 20px darkgray;
+}
+
+/* Download button below header */
+.download-button1 {
+    text-align: center;
+    margin-top: 20px;
+}
+.download-button1 a {
+    padding: 12px 24px;
+    background-color: #04ddb2;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+.download-button1 a:hover {
+    background-color: #00b18a;
+}
+
+/* Footer section */
+.contaner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 30px;
+}
+
+.contaner div {
+    flex: 1 1 200px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.contaner div h5 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.contaner ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contaner ul li {
+    margin-bottom: 10px;
+}
+
+.contaner ul li a {
+    color: #555;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.contaner ul li a:hover {
+    color: #04ddb2;
+}
+
+.contaner #list1 img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.contaner #icons {
+    font-size: 24px;
+    margin-right: 20px;
+    color:white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    background-color: #04ddb2;
+    border: 1px solid #04ddb2;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.contaner #icons:hover {
+    padding: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #header h1 {
+        font-size: 28px;
+    }
+
+    #header p {
+        font-size: 16px;
+    }
+
+    .download-button1 a {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .contaner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contaner div {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    #video-box iframe {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    #header h1 {
+        font-size: 24px;
+    }
+
+    #header p {
+        font-size: 14px;
+    }
+
+    .download-button1 a {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .contaner {
+        padding: 10px;
+    }
+
+    .contaner div {
+        padding: 5px;
+    }
+
+    #video-box iframe {
+        height: 200px;
+    }
+}
